@@ -1,0 +1,52 @@
+.header {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  position: relative;
+
+  transition: all ease 1s;
+}
+.btN {
+  border: 1px solid #000;
+  outline: 0;
+  border-radius: 10px;
+}
+.signUp {
+  background-color: #000 !important ;
+  color: #fff;
+  border: 1px solid #000;
+  outline: 0;
+  border-radius: 15px;
+}
+
+.signIn {
+  background-color: transparent;
+  border: 1px solid #000;
+  outline: 0;
+  border-radius: 15px;
+}
+.mobMenu {
+  display: none;
+  transition: all ease 1s;
+}
+
+@media screen and (max-width: 768px) {
+  .header nav {
+    position: absolute;
+    height: 90vh;
+    background: #fff;
+    top: 8vh;
+    width: 100%;
+    left: 0;
+    transition: all ease 1s;
+  }
+  #remove {
+    height: 8vh;
+  }
+
+  .mobMenu {
+    display: block;
+  }
+}
