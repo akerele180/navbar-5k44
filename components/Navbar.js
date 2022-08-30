@@ -12,7 +12,14 @@ const Navbar = () => {
       <div className={styles.logo}>
         <h1>LOGO</h1>
       </div>
-      <nav id={mobState ? "add" : "remove"} className="">
+      <input
+        type="text"
+        name="search"
+        id=""
+        placeholder="Search..."
+        className={styles.inputField}
+      />
+      <nav className={mobState ? styles.add : styles.remove}>
         <ul>
           <li>
             <Link href="/">
